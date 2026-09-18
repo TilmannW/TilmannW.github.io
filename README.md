@@ -1,21 +1,21 @@
-# Tilmann Waffenschmidt — personal academic website
+# Tilmann Waffenschmidt — website v0.3
 
-This folder is ready for GitHub Pages.
+This version recreates the visual language of Vincent Pons' academic website:
+minimal white layout, restrained Helvetica typography, wide whitespace, name/navigation header,
+and simple text-first pages.
 
-## Upload to GitHub
-1. Open the repository `tilmannw.github.io`.
-2. Click **Add file → Upload files**.
-3. Drag **all files from this folder** into the upload area.
-4. Commit the changes to the `main` branch.
-5. Wait a minute or two and refresh `https://tilmannw.github.io/`.
+The Research page keeps the requested additional functionality:
+- project image
+- PDF link
+- expandable abstract
 
-## Main files
-- `index.html` — About page
-- `research.html` — research page with images, PDF links, and expandable abstracts
-- `teaching.html` — teaching page
-- `cv.html` — public-safe CV page
-- `style.css` — all visual styling
+## Upload
+Upload all files in this folder to the root of `tilmannw.github.io` and overwrite the old files.
+Commit to `main`. GitHub Pages will update automatically.
 
-## Editing later
-Most content changes only require editing the relevant `.html` file.
-Visual changes are mainly in `style.css`.
+Main files:
+- index.html
+- research.html
+- cv.html
+- teaching.html
+- style.css
