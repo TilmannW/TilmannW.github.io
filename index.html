@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tilmann Waffenschmidt</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: white;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+    header {
+      padding: 38px 0 25px 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 55px 0;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 19px;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 230px 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    .photo-placeholder {
+      width: 230px;
+      height: 285px;
+      background: #eeeeee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 14px;
+    }
+
+    .about-text p {
+      margin-top: 0;
+      margin-bottom: 18px;
+    }
+
+    .paper {
+      margin-bottom: 32px;
+    }
+
+    .paper-title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .paper-description {
+      margin-top: 5px;
+      color: #555;
+    }
+
+    .links a {
+      color: #245b83;
+      text-decoration: none;
+      margin-right: 12px;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      border-top: 1px solid #e5e5e5;
+      padding: 25px 0 40px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+
+      .header-inner {
+        display: block;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 18px;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-placeholder {
+        width: 200px;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+
+    <h1>Tilmann Waffenschmidt</h1>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#cv">CV</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main class="container">
+
+  <section id="about">
+
+    <h2>About</h2>
+
+    <div class="about">
+
+      <div class="photo-placeholder">
+        Photo
+      </div>
+
+      <div class="about-text">
+
+        <p>
+          I am a PhD candidate in Political Economy at Heidelberg University,
+          where I work at the Chair of International and Development Politics
+          of Axel Dreher.
+        </p>
+
+        <p>
+          My research interests lie at the intersection of political economy,
+          development economics, and applied microeconomics.
+          In my current research, I study political communication and public
+          opinion, international organizations and political polarization,
+          migration, and the historical origins of culture.
+        </p>
+
+        <p>
+          Before joining Heidelberg University, I studied International
+          Political Economy at the University of Marburg and the University of
+          Texas at Dallas, as well as International and Development Economics
+          at HTW Berlin.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="research">
+
+    <h2>Research</h2>
+
+    <div class="paper">
+
+      <div class="paper-title">
+        Political Talk Shows and Public Opinion
+      </div>
+
+      <div class="paper-description">
+        How political talk shows, their guests, and the topics they discuss
+        affect party support, political opinions, and economic expectations.
+      </div>
+
+      <div class="links">
+        <a href="#">Draft</a>
+      </div>
+
+    </div>
+
+
+    <div class="paper">
+
+      <div class="paper-title">
+        IMF Conditionality, Economic Reforms, and Political Polarization
+      </div>
+
+      <div class="paper-description">
+        With Valentin Lang.
+      </div>
+
+      <div class="links">
+        <a href="#">Draft</a>
+      </div>
+
+    </div>
+
+
+    <div class="paper">
+
+      <div class="paper-title">
+        Ballots, Borders, and Election Cycles
+      </div>
+
+      <div class="paper-description">
+        Electoral incentives and asylum decisions across democracies.
+      </div>
+
+    </div>
+
+
+    <div class="paper">
+
+      <div class="paper-title">
+        Seeds of Change
+      </div>
+
+      <div class="paper-description">
+        With Tobias Korn. The long-run relationship between Neolithic diets
+        and culture.
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="teaching">
+
+    <h2>Teaching</h2>
+
+    <p>
+      Information on teaching and student supervision will be added here.
+    </p>
+
+  </section>
+
+
+  <section id="cv">
+
+    <h2>CV</h2>
+
+    <p>
+      My CV will be available here.
+    </p>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+    © Tilmann Waffenschmidt
+  </div>
+
+</footer>
+
+</body>
+</html>
