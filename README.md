@@ -1,21 +1,14 @@
-# Tilmann Waffenschmidt — website v0.3
+# Website v0.4 — Pons layout
 
-This version recreates the visual language of Vincent Pons' academic website:
-minimal white layout, restrained Helvetica typography, wide whitespace, name/navigation header,
-and simple text-first pages.
+This version rebuilds the site around the visible layout of vincentpons.org:
+- centered name
+- horizontal rule
+- centered navigation
+- second horizontal rule
+- centered page heading
+- portrait left / biography right
+- Avenir-like typography and spacing
 
-The Research page keeps the requested additional functionality:
-- project image
-- PDF link
-- expandable abstract
+The Research page keeps the requested images, PDF links, and expandable abstracts.
 
-## Upload
-Upload all files in this folder to the root of `tilmannw.github.io` and overwrite the old files.
-Commit to `main`. GitHub Pages will update automatically.
-
-Main files:
-- index.html
-- research.html
-- cv.html
-- teaching.html
-- style.css
+Upload all files in this folder to the root of `TilmannW.github.io`, overwriting the old versions.
