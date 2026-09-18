@@ -1,0 +1,282 @@
+
+:root {
+  --text: #222222;
+  --muted: #666666;
+  --line: #e6e6e6;
+  --link: #2f5e7f;
+  --max: 1030px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.58;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 34px 28px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 31px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+}
+
+.site-title a { color: var(--text); text-decoration: none; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+  white-space: nowrap;
+}
+
+.nav a {
+  color: #2d2d2d;
+  font-size: 16px;
+}
+
+.nav a.active {
+  font-weight: 600;
+}
+
+.page {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 56px 28px 80px;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  color: var(--text);
+}
+
+h1.page-heading {
+  font-size: 29px;
+  font-weight: 400;
+  margin: 0 0 36px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 58px 0 28px;
+}
+
+h2:first-child { margin-top: 0; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 235px minmax(0, 1fr);
+  gap: 50px;
+  align-items: start;
+}
+
+.profile-photo {
+  width: 235px;
+  height: 294px;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%);
+}
+
+.about-copy p {
+  margin: 0 0 18px;
+}
+
+.about-copy .lead {
+  font-size: 17px;
+}
+
+.small-links {
+  margin-top: 24px;
+  font-size: 15px;
+}
+
+.small-links span {
+  color: var(--muted);
+  margin: 0 8px;
+}
+
+.research-section + .research-section {
+  margin-top: 68px;
+}
+
+.section-title {
+  font-size: 27px;
+  font-weight: 400;
+  margin: 0 0 34px;
+}
+
+.paper {
+  display: grid;
+  grid-template-columns: 235px minmax(0, 1fr);
+  gap: 34px;
+  padding: 0 0 38px;
+  margin: 0 0 38px;
+  border-bottom: 1px solid var(--line);
+}
+
+.paper:last-child {
+  border-bottom: none;
+}
+
+.paper-image {
+  width: 235px;
+  height: 142px;
+  object-fit: cover;
+  border: 1px solid #ededed;
+  background: #fafafa;
+}
+
+.paper-title {
+  font-size: 19px;
+  line-height: 1.35;
+  margin: -2px 0 6px;
+  font-weight: 600;
+}
+
+.paper-authors {
+  margin: 0 0 5px;
+  color: #3e3e3e;
+}
+
+.paper-status {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 15px;
+}
+
+.paper-links {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+.paper-links a {
+  margin-right: 14px;
+  font-weight: 600;
+}
+
+details {
+  margin-top: 6px;
+}
+
+summary {
+  cursor: pointer;
+  color: var(--link);
+  font-size: 15px;
+  font-weight: 600;
+  list-style-position: outside;
+}
+
+.abstract {
+  margin-top: 12px;
+  color: #444444;
+  font-size: 15px;
+  max-width: 720px;
+}
+
+.text-page {
+  max-width: 760px;
+}
+
+.text-page p {
+  margin: 0 0 18px;
+}
+
+.cv-block {
+  margin-bottom: 34px;
+}
+
+.cv-block h2 {
+  font-size: 22px;
+  margin: 0 0 16px;
+}
+
+.cv-item {
+  margin-bottom: 12px;
+}
+
+.cv-date {
+  color: var(--muted);
+  min-width: 105px;
+  display: inline-block;
+}
+
+.note {
+  background: #f7f7f7;
+  padding: 16px 18px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 34px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+}
+
+.footer-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 24px 28px 38px;
+  font-size: 13px;
+  color: #777;
+}
+
+@media (max-width: 760px) {
+  .header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 26px;
+    gap: 14px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 10px 22px;
+  }
+
+  .page {
+    padding-top: 40px;
+  }
+
+  .about-grid,
+  .paper {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    width: 210px;
+    height: 263px;
+  }
+
+  .paper-image {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+  }
+}
