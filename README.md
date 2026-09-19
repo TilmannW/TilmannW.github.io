@@ -1,14 +1,9 @@
-# Website v0.4 — Pons layout
+# Tilmann Waffenschmidt — academic website
 
-This version rebuilds the site around the visible layout of vincentpons.org:
-- centered name
-- horizontal rule
-- centered navigation
-- second horizontal rule
-- centered page heading
-- portrait left / biography right
-- Avenir-like typography and spacing
+Ready-to-upload static GitHub Pages site.
 
-The Research page keeps the requested images, PDF links, and expandable abstracts.
+## Publish / update
 
-Upload all files in this folder to the root of `TilmannW.github.io`, overwriting the old versions.
+Upload the files in this folder to the root of the `TilmannW.github.io` repository and commit them to the branch used by GitHub Pages (normally `main`).
+
+The website contains a full HTML CV page (`cv.html`) plus a direct PDF version (`Tilmann_Waffenschmidt_CV.pdf`). For future CV updates, replace the PDF using the same filename and update `cv.html` when the content changes.

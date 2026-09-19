@@ -358,3 +358,259 @@ details[open] summary::after{content:" −";}
     height:154px;
   }
 }
+
+/* ===== FINAL WEBSITE REFINEMENTS ===== */
+.research-intro{
+  margin:-10px 0 30px;
+  color:var(--muted);
+  font-size:15px;
+}
+
+.paper-title-main{
+  font-weight:600;
+}
+
+.paper-image-placeholder{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:22px;
+  color:#626262;
+  background:
+    linear-gradient(135deg,rgba(0,160,210,.06),rgba(0,160,210,0) 65%),
+    #f6f6f4;
+  border:1px solid #e7e7e3;
+  font-size:15px;
+  letter-spacing:.03em;
+}
+
+/* ===== FULL HTML CV ===== */
+.cv-page{
+  width:min(900px,calc(100% - 44px));
+}
+
+.cv-actions{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  margin:-8px 0 42px;
+  padding-bottom:18px;
+  border-bottom:1px solid #d8d8d8;
+  font-size:15px;
+}
+
+.cv-download{
+  display:inline-block;
+  padding:8px 14px;
+  border:1px solid var(--accent);
+  color:var(--accent);
+  text-decoration:none;
+}
+
+.cv-download:hover{
+  background:rgba(0,160,210,.05);
+  text-decoration:none;
+}
+
+.cv-contact{
+  color:var(--muted);
+}
+
+.cv-section{
+  margin:0 0 43px;
+}
+
+.cv-section h2{
+  margin:0 0 18px;
+  padding-bottom:8px;
+  border-bottom:1px solid #bcbcbc;
+  font-size:20px;
+  line-height:1.25;
+  font-weight:400;
+}
+
+.cv-section p{
+  margin:0 0 9px;
+}
+
+.cv-row{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 150px;
+  gap:24px;
+  align-items:start;
+  margin:0 0 17px;
+}
+
+.cv-row-compact{
+  margin-top:-8px;
+}
+
+.cv-year{
+  text-align:right;
+  white-space:nowrap;
+  color:#666;
+  font-size:14.5px;
+}
+
+.cv-subline{
+  margin-top:3px;
+  color:#3e3e3e;
+  font-size:15px;
+  line-height:1.45;
+}
+
+.cv-note{
+  margin-top:3px;
+  color:#666;
+  font-size:14.3px;
+  font-style:italic;
+  line-height:1.45;
+}
+
+.cv-seminar{
+  margin-top:7px;
+}
+
+.cv-supervision-row{
+  margin-bottom:24px;
+}
+
+.cv-project{
+  margin:0 0 16px;
+  line-height:1.45;
+}
+
+.cv-project-title{
+  font-weight:600;
+}
+
+.cv-coauthors{
+  margin-top:2px;
+  color:#555;
+  font-size:14.5px;
+}
+
+.cv-year-heading{
+  margin:27px 0 12px;
+  font-size:17px;
+  font-weight:600;
+}
+
+.cv-event{
+  margin:0 0 15px;
+}
+
+.cv-footnote{
+  margin-top:12px !important;
+  color:#777;
+  font-size:13.5px;
+}
+
+.reference-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+}
+
+.reference-card{
+  min-width:0;
+  font-size:14px;
+  line-height:1.45;
+}
+
+.reference-card strong,
+.reference-card span,
+.reference-card a{
+  display:block;
+}
+
+.reference-card span{
+  margin-top:2px;
+  color:#555;
+}
+
+.reference-card a{
+  margin-top:5px;
+  overflow-wrap:anywhere;
+}
+
+/* ===== TEACHING ===== */
+.teaching-page{
+  width:min(820px,calc(100% - 44px));
+}
+
+.teaching-section{
+  margin-bottom:44px;
+}
+
+.teaching-section h2{
+  margin:0 0 20px;
+  padding-bottom:8px;
+  border-bottom:1px solid #bcbcbc;
+  font-size:20px;
+  font-weight:400;
+}
+
+.teaching-entry{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 120px;
+  gap:24px;
+  margin:0 0 22px;
+}
+
+.teaching-date{
+  text-align:right;
+  white-space:nowrap;
+  color:#666;
+  font-size:14.5px;
+}
+
+.teaching-subline{
+  margin-top:4px;
+  color:#3f3f3f;
+}
+
+.teaching-note{
+  margin-top:3px;
+  color:#666;
+  font-size:14px;
+  font-style:italic;
+}
+
+@media (max-width:760px){
+  .cv-page,
+  .teaching-page{
+    width:calc(100% - 32px);
+  }
+
+  .cv-actions{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .cv-row,
+  .teaching-entry{
+    grid-template-columns:1fr;
+    gap:3px;
+  }
+
+  .cv-year,
+  .teaching-date{
+    text-align:left;
+    order:-1;
+    margin-bottom:2px;
+  }
+
+  .reference-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .paper-image-placeholder{
+    width:250px;
+    height:154px;
+  }
+}
