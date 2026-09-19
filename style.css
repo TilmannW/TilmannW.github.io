@@ -614,3 +614,56 @@ details[open] summary::after{content:" −";}
     height:154px;
   }
 }
+
+
+/* ===== DATA ===== */
+.data-page{
+  width:min(820px,calc(100% - 44px));
+}
+
+.data-resource{
+  margin:0 auto;
+}
+
+.data-resource h2{
+  margin:0 0 9px;
+  font-size:22px;
+  font-weight:500;
+}
+
+.data-lead{
+  margin:0 0 24px !important;
+  color:var(--muted);
+  font-size:15.5px;
+}
+
+.data-resource p{
+  margin:0 0 20px;
+}
+
+.data-meta{
+  margin-top:30px;
+  padding-top:18px;
+  border-top:1px solid #d6d6d6;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+  font-size:14.5px;
+  color:#444;
+}
+
+.data-meta span{
+  display:block;
+  margin-bottom:3px;
+  color:#777;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+
+@media (max-width:760px){
+  .data-meta{
+    grid-template-columns:1fr;
+    gap:13px;
+  }
+}
