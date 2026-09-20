@@ -667,3 +667,49 @@ details[open] summary::after{content:" −";}
     gap:13px;
   }
 }
+
+
+/* ===== ABOUT PAGE: COMPACT ONE-SCREEN DESKTOP LAYOUT ===== */
+@media (min-width:761px){
+  body.home-page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+  }
+
+  body.home-page .page{
+    flex:1;
+    padding-top:34px;
+    padding-bottom:20px;
+  }
+
+  body.home-page .page-heading{
+    margin-bottom:24px;
+  }
+
+  body.home-page .profile-links{
+    margin-top:18px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:3px 14px;
+    line-height:1.45;
+  }
+
+  body.home-page .profile-links a{
+    display:inline-block;
+  }
+
+  body.home-page .about-copy p{
+    margin-bottom:21px;
+  }
+
+  body.home-page .site-footer{
+    margin-top:auto;
+  }
+
+  body.home-page .footer-inner{
+    padding-top:7px;
+    padding-bottom:18px;
+  }
+}
